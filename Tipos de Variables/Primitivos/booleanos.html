@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos Primitivos</title>
+</head>
+<body>
+    <h1>Datos Primitivos</h1>
+    <h2>Datos Booleanos</h2>
+
+<script>
+    let verdadero = true;
+    let falso = false;
+
+    //también podemos crear valores booleanos
+    //a partir del constructor boolean, pero es mucho rollo
+    let v = Boolean(true);
+    let f = Boolean(false);
+
+    console.log(verdadero, falso, v, f);
+    console.log(typeof verdadero, typeof falso);
+
+    console.log(Boolean(0)); //valor que tiende a falso.
+    console.log(Boolean(-7)); //numero negativo tiende a verdadero.
+    console.log(Boolean("")); //strings vacías tienden a falso.
+    console.log(Boolean(".")); //strings con cualquier caracter tienden a verdadero.
+
+    //otras expresiones que siempre tienden a verdadero:
+    //if, {}, [], number, string, fecha, numero decimal, numero negativo
+
+      //otras expresiones que siempre tienden a falso:
+    //falso, null, undefined, strings vacios, Not a Number NaN
+
+
+</script>
+    
+</body>
+</html>

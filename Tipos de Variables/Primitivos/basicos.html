@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos Javascript</title>
+</head>
+<body>
+    <h1>Fundamentos Javascript</h1>
+    <p>Podemos almacenar los valores JS en una variable.</p>
+    <script>
+
+
+        
+        var hola = "Hola Mundo"; 
+        /* es una variable global, una mala práctica*/
+        /* todo lo que declare en var se quedará en el doc global del doc */
+        console.log(hola);
+
+        let hello = "Hello World";
+
+        console.log(hola);
+        console.log(hello);
+        console.log(window);
+        console.log(window.hola);
+        console.log(window.hello);
+
+        //Ambito de bloque
+        var musica = "Rock";
+        console.log("Variable música antes del bloque", musica);
+
+        {
+            var musica = "Pop";
+            console.log("Variable música dentro del bloque", musica);
+        }
+
+        const PI = 3.1416;
+        console.log(PI);
+
+        //Const se usa cuando no vamos a cambiar el valor de la variable
+        //en toda la aplicación. O SEA el valor será CONSTANTE.
+        //Con const no puedo declarar una variable vacía.
+        //A pesar de ello, puedo cambiar los valores de const, con
+        //un array por ejemplo.
+        
+        //En este caso, puedo usar let para declarar variables vacías, 
+        //o sea, sin valor asignado. 
+
+        let Larissa = {
+            nombre: "Larissa Borges del Amor de Dios",
+            edad: 27,
+        }
+
+        let July = {
+            nombre: "Júlia Roberta",
+            edad: 17,
+            color: "gris",
+            patas: 4,
+            orejas: 2,
+            
+        }
+
+        let colores = ['blanco', 'negro', 'fúcsia', 'margenta', 'oliva'];
+
+        console.log(Larissa);
+        console.log(colores);
+        console.log(July);
+    </script>
+</body>
+</html>

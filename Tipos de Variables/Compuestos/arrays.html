@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arreglos</title>
+</head>
+
+<body>
+<h1>Arrays</h1>
+Hay diferentes maneras de declarar arreglos.
+Un array es una colección de elementos.
+
+
+<script>
+
+const a = [];
+const b = [1, true, "Hola", ["A", "B", "C", [11, 22, 33]]];
+console.log(a);
+console.log(b);
+console.log(b.length);
+console.log(b[2]); //para acceder a la palabra "hola", ponemos el número de su posición, acordandonos de que en los arrays las posiciones empiezan en 0, por esto hola es 2 y no 3.
+console.log(b[0]); //1
+console.log(b[3][2]); //imprimimos en consola la posición del array abc, poniendo un 3, que es su posición, y luego C, poniendo un 2, porque es su posición (0, 1, 2 -- A, B, C)
+console.log(b[3][3][0]);
+
+const c = Array.of("X", "Y", "Z", 9, 8, 7)
+console.log(c);
+
+//Si necesito varias posiciones de arrays, puedo hacer esto: const x = Array(x).fill(valor).
+const d = Array(100).fill(false)
+console.log(d);
+
+//Formas de expresar arrays obsoletas.
+const e = new Array ();
+console.log(e);
+
+const f = new Array (1, 2, 3, true, false);
+console.log(f);
+
+//Agregar un nuevo elemento a "colores", por ejemplo. Usamos push
+//Quitar el ultimo elemento de "colores", usamos pop.
+
+const colores = ['Rojo', 'Verde', 'Azul'];
+console.log(colores);
+
+colores.push("Negro");
+console.log(colores);
+
+colores.pop();
+console.log(colores);
+
+//For each
+//el=elemento. selecciono el elemento que me interesa dentro del array.
+//en este caso colores.
+//index para que me ponga un numero de identificacion en los id.
+
+colores.forEach(function (el, index) {
+    console.log(`<li id="${index}" >${el}</li>`);
+});
+
+
+</script>
+
+</body>
+
+</html>

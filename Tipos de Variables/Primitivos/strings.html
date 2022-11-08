@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos Primitivos</title>
+</head>
+<body>
+    <h1>Strings</h1>
+    <h2>Concatenación</h2>
+    <h2>Interpolación</h2>
+    
+<script>
+
+//TEXTO aka Strings
+
+let nombre = "Larissa";
+        let apellido = "Borges";
+        let saludo = new String("Hola Mundo");
+        let lorem = "        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.           "
+        
+        console.log(
+            nombre.length,
+            apellido.length,
+            saludo.length,
+            nombre.toUpperCase(),
+            apellido.toLowerCase(),
+            lorem.includes("amet"),
+            lorem.includes("Larissa"),
+            lorem.trim(), //quita los espacios en blanco que sobran
+            lorem.split(","));
+
+//CONCATENACIÓN
+//Significa unir una cadena de texto con una variable 
+//que normalmente es de tipo cadena.
+
+let nombre2 = "Larissa";
+let apellido2 = "Borges";
+let saludo2 = "Hola, mi nombre es " + nombre2 + " " + apellido2 + "."
+
+console.log(saludo2);
+
+//INTERPOLACIÓN:
+//Template Strings ``
+
+let saludo3 = `Hola mi nombre es ${nombre} ${apellido}.`;
+console.log(saludo3);
+
+let ul2 = `<ul>
+    <li>Primavera</li>
+    <li>Verano</li>
+    <li>Otoño</li>
+    <li>Invierno</li>
+</ul>`; 
+
+console.log(ul2);
+
+
+    //Para mostrar código html, usamos template strings.
+
+</script>
+    
+
+
+
+</body>
+</html>

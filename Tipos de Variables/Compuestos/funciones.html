@@ -1,0 +1,90 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+</head>
+<body>
+    <h1>Funciones</h1>
+    <p>- Una funcion es un bloque de código con su propio contenido.</p>
+    <p>- Una función también puede ser considerada un objeto.</p>
+    
+    <h2>Tipos de Funciones</h2>
+
+    <h3>Función Declarada</h3>
+    <h3>Función Expresada</h3>
+
+
+    <script>
+        //Función declarada.
+
+        function estoEsUnaFuncion() {
+            console.log("Uno");
+            console.log("Dos");
+            console.log("Tres");
+        }
+
+        //Invocación de función
+            estoEsUnaFuncion();
+            unaFuncionQueDevuelveValor();
+
+//Return
+  //Al poner un return, lo que está después se ignora.
+ //Y todo lo que está antes se ejecuta.
+
+ function unaFuncionQueDevuelveValor() {
+            console.log("Hey");
+            console.log("Hi");
+            console.log("Hello");
+            return "La función ha retornado una cadena de texto";
+        }
+
+let valorDeFuncion = unaFuncionQueDevuelveValor ();
+console.log(valorDeFuncion);
+
+//Hacer con que una funcion reciba valores.
+
+function saludar(nombre = "Por defecto", edad = 0) {
+    console.log(`Hola, mi nombre es ${nombre} y tengo ${edad} años.`)
+}
+
+saludar("July", 17);
+saludar();
+
+//¿El orden de las funciones es relevante?
+//Funciones declaradas vs. funciones
+
+function funcionDeclarada() {
+    console.log("Esto es una función declarada, puede invocarse en cualquier parte de nuestro código, incluso antes de que la función sea declarada.");
+
+}
+
+funcionDeclarada();
+
+//función anónima: una función que no tiene nombre, y a parte le estamos asignando como valor una variable.
+const funcionExpresada = function () {
+    console.log("Esto es una función expresada, es decir, una función que se le ha asignado como valor a una variable, si invocamos esta función antes de su definición JS nos dirá...")
+
+}
+
+funcionExpresada ();
+
+
+    </script>
+
+
+
+
+
+
+    
+
+
+    
+</body>
+</html>
